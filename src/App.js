@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import TipoEquipos from "./components/TipoEquipos";
+import Marcas from "./components/Marcas";
+import Estados from "./components/Estados";
+import Usuario from './components/Usuarios';
+import Inventario from './components/Inventario';
+import AppRouter from "./routers/AppRouter";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const title = 'Tipo de Equipo'
+
+    return (
+        <div>
+            <AppRouter />
+        </div>
+    );
 }
 
 export default App;
